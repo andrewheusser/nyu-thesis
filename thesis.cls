@@ -258,7 +258,7 @@
  \vspace*{.5cm}
 
     \begin{center}
-      \linespread{3} \normalsize {\textbf{\huge{\bfseries \@thesistitle}}}\\
+      \linespread{3} \normalsize {\textbf{\Large{\bfseries \@thesistitle}}}\\
     \linespread{1.6} \normalsize
 	\vspace{1cm}
      by\\

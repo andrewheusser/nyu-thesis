@@ -1,5 +1,5 @@
 
-pdf : dedication.tex acknowledgments.tex abstract.tex introduction.tex paper1.tex conclusion.tex appendix.tex
+pdf : dedication.tex acknowledgments.tex abstract.tex introduction.tex chapter1.tex chapter2.tex chapter3.tex conclusion.tex appendix.tex
 	pdflatex main.tex
 	biber main
 	pdflatex main.tex
@@ -19,8 +19,14 @@ abstract.tex : abstract.markdown
 introduction.tex : introduction.markdown
 	pandoc introduction.markdown -o introduction.tex --biblatex
 
-paper1.tex : paper1.markdown
-	pandoc paper1.markdown -o paper1.tex --biblatex
+chapter1.tex : chapter1.markdown
+	pandoc chapter1.markdown -o chapter1.tex --biblatex
+
+chapter2.tex : chapter2.markdown
+	pandoc chapter2.markdown -o chapter2.tex --biblatex
+
+chapter3.tex : chapter3.markdown
+	pandoc chapter3.markdown -o chapter3.tex --biblatex
 
 conclusion.tex : conclusion.markdown
 	pandoc conclusion.markdown -o conclusion.tex --biblatex
