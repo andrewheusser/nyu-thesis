@@ -4,6 +4,7 @@ dedication.tex
 acknowledgments.tex
 abstract.tex
 introduction.tex
+chapter*.tex
 paper*.tex
 conclusion.tex
 appendix.tex

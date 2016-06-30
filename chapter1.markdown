@@ -229,5 +229,8 @@ Finally, the results from our free recall data (Experiment 3) underscore the inf
 
 Together, Experiments 1 and 2 suggest that while perceptual boundaries may enhance some forms of memory (i.e. object-color associative memory), this comes at the cost of reduced across-event associative memory (temporal order memory).  In other words, shifting one’s attention to a novel stimulus in the environment trades off with the ongoing maintenance and integration of representations into an event model, and this causes a disruption in the associative binding of items encountered across time.  Finally, Experiment 3 highlights that perceptual boundaries influence natural recall behavior and suggests the possibility of a mechanism where event boundaries may serve as a ‘gateway’ into an episodic memory.  In summary, the findings from all three studies highlight that organizational processes during encoding influence the structure of later episodic memories.
 
+# Supplemental Figures
+
 ![This is the caption](figures/chapter1_suppfigure1)
+
 ![This is the caption](figures/chapter1_suppfigure2)
