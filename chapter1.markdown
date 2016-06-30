@@ -25,6 +25,8 @@ The present set of experiments was designed to test these predictions by assessi
 
 In Experiment 1, we sought to understand how perceptual boundaries influence associative memory for the local information presented at boundaries. Participants encoded lists of objects that were embedded in a colored frame (Figure 1). On each trial, they were instructed to imagine the displayed object in the color of the background frame and to make a pleasant/unpleasant judgment on the object-color combination. Importantly, the color of the frame did not change for six consecutive trials before switching to a new background color. We operationalized an ‘event’ as consecutive trials where the color of the frame stayed the same.  After each encoding list, participants performed an object-color associative memory test. ‘Boundary’ trials were defined as trials on which the presented color frame was different from the previous trial; ‘non-boundary’ trials were all other trials (i.e. the presented color matched the color from the preceding trial). Boundary objects were therefore objects that were encoded concurrently with a color frame switch, while non-boundary objects were all other objects.
 
+![This is the caption](figures/chapter1_figure1)
+
 The goal of Experiment 1 was to assess whether perceptual event boundaries increased object-color associative memory. We predicted that the memory enhancement would be specific to the boundary object-color pair.  A pattern of this nature would suggest a transient memory effect, perhaps driven by a boundary-driven allocation of attentional resources [@kurby_segmentation_2008].
 
 ## Methods
@@ -44,6 +46,8 @@ Before the experiment began, there was a brief practice version of the experimen
 Following each encoding list, we tested object-color associative memory.  To minimize recency memory effects, the test was structured such that objects presented in the first half of the experiment (1:18) were tested first and objects presented in the second half of the experiment (19:36) were tested second.  However, within each half, the test trials were randomized.  For each test trial, participants were shown a previously studied object with a grey border presented above two colors that were positioned on the left and right side of the computer screen (Figure 1). One of these colors (target) was originally paired with the object while the other color (lure) was always one of the colored frames that had immediately preceded or followed the target color at encoding.  The lure was counterbalanced such that it was equally likely to precede or follow the target color. Targets and lures were also equally likely to appear in the left or right positions on screen. In one step, participants were asked to indicate which of the two colors had been paired with the object at encoding and also to indicate their confidence in their decision (high/low confidence, HC/LC). Thus, there were a total of 4 possible responses during the test (HC left color, LC left color, HC, right color, LC right color). Test trials were self-paced and advanced as soon as a response was given, with a fixed .5 s ITI between test trials.  Half of the items in each encoding list were tested: We alternated between testing of even (2:2:36) and odd (1:2:36) trials on each list.
 
 ## Results
+
+![This is the caption](figures/chapter1_figure2)
 
 ### Effect of perceptual boundaries on color memory performance.
 
@@ -90,6 +94,8 @@ The only procedural difference during encoding (compared to Experiment 1) was th
 After each study list, color memory was tested first, with the same design as Experiment 1. Following completion of the color memory test, participants were tested on their memory for the temporal order of pairs of objects. For each test trial, two previously studied objects appeared side by side on the screen (Figure 1).  Participants were asked to indicate which of the two objects appeared earlier in the list. The tested pairs of objects were chosen such that there had always been three intervening objects between them at encoding. Critically, this was the case for both within-event and across-event trial-pairs. Thus, the actual number of intervening items between the two conditions was constant (3 intervening items) but the across-event test-pairs were studied with a boundary between them while within-event pairs were studied with the same color frame (i.e. in the same event; Figure 1). Participants were again asked to indicate their confidence in their decision (high/low). Test trials were self-paced and advanced as soon a response was given, with a fixed .5 s ITI included between test trials.
 
 ## Results
+
+![This is the caption](figures/chapter1_figure3)
 
 ### Effect of perceptual boundaries on object-color and temporal order memory
 
@@ -159,6 +165,8 @@ After each free recall period, participants were given an object-color memory ta
 
 ## Results
 
+![This is the caption](figures/chapter1_figure4)
+
 ### Free recall performance
 
 *Overall performance.*  Participants recalled an average of 31.30% ($\sigma$ = 12.6%) of the items presented for each list (or 7.51 out of 24 items per list). As expected, free recall varied as a function of serial position of the list [_F_(23,506) = 6.82, _p_ < .001, $\eta^{2}$ = .237, Supplemental Fig. 1], where items at the beginning and the end of the list were more likely to be recalled than items in the middle of the list [@murdock_serial_1962].  We also computed free recall performance as a function of event position within an event, but did not observe an effect [_F_(3,66) = .96, _p_ > .1], meaning that all event positions 1-4 were equally likely to be recalled.  We discuss the implication of this finding in more detail in the general discussion.
@@ -220,3 +228,6 @@ Finally, the results from our free recall data (Experiment 3) underscore the inf
 # Conclusions
 
 Together, Experiments 1 and 2 suggest that while perceptual boundaries may enhance some forms of memory (i.e. object-color associative memory), this comes at the cost of reduced across-event associative memory (temporal order memory).  In other words, shifting one’s attention to a novel stimulus in the environment trades off with the ongoing maintenance and integration of representations into an event model, and this causes a disruption in the associative binding of items encountered across time.  Finally, Experiment 3 highlights that perceptual boundaries influence natural recall behavior and suggests the possibility of a mechanism where event boundaries may serve as a ‘gateway’ into an episodic memory.  In summary, the findings from all three studies highlight that organizational processes during encoding influence the structure of later episodic memories.
+
+![This is the caption](figures/chapter1_suppfigure1)
+![This is the caption](figures/chapter1_suppfigure2)
