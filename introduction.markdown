@@ -1,1 +1,13 @@
-bla
+\begin{quote}
+\textit{"Consciousness, then, does not appear to itself chopped up in bits. Such words as 'chain' or 'train' do not describe it fitly as it presents itself in the first instance. It is nothing jointed; if flows. A 'river' or a 'stream' are the metaphors by which it is most naturally described. In talking of it hereafter, let us call it the stream of thought, of consciousness, or of subjective life..."}
+\end{quote}
+
+This famous passage by William James from his book \textit{The Principles of Psychology} is frequently used to describe the continuous and flowing nature of our conscious experiences. It perfectly captures the intuition that our life experiences ebb and flow like a river, without noticeable breaks or disruptions. The passage usually cut off at this point, leading the reader to believe that James actually thought of consciousness as a flowing undivided river of experience.  Ironically, the next line\footnote{literally, the very next line - Thank you to Dr. Jeff Zacks for pointing this out in his talk at the Context and Episodic Memory Symposium in 2016} is hardly ever included in the passage, and virtually contradicts the message that comes before it:
+
+\begin{quote}
+\textit{...But now there appears, even within the limits of the same self, and between thoughts all of which alike have this same sense of belonging together, a kind of jointing and separateness among the parts, of which this statement seems to take no account.  I refer to the breaks that are produced by sudden contrasts in the quality of the successive segments of the stream of thought. If the words 'chain' and 'train' had no natural fitness in them, how came such words to be used at all? Does not a loud explosion rend the consciousness upon which it abruptly breaks, in twain? Does not every sudden shock, appearance of a new object, or change in a sensation, create a real interruption, sensibly felt as such, which cuts the conscious stream across at the moment at which it appears? Do not such interruptions smite us every hour of our lives, and have we the right, in their presence, still to call our consciousness a continuous stream?}
+\end{quote}
+
+Considering the passage in its entirety, it is clear that James did view consciousness as a stream, but also recognized that sudden contrasts and novelty in our experiences, can create discontinuities in the stream.
+
+The focus of this thesis is on how the our brains represent and subsequently remember everyday life experiences that are extended in time, and in particular, how \textit{sudden contrasts} in our perceptual experiences might serve to divide an otherwise continuous existence into more manageable chunks.  In other words, how do our brains form memories for \textit{episodic events}?
