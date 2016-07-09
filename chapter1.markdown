@@ -25,7 +25,12 @@ The present set of experiments was designed to test these predictions by assessi
 
 In Experiment 1, we sought to understand how perceptual boundaries influence associative memory for the local information presented at boundaries. Participants encoded lists of objects that were embedded in a colored frame (Figure 1). On each trial, they were instructed to imagine the displayed object in the color of the background frame and to make a pleasant/unpleasant judgment on the object-color combination. Importantly, the color of the frame did not change for six consecutive trials before switching to a new background color. We operationalized an ‘event’ as consecutive trials where the color of the frame stayed the same.  After each encoding list, participants performed an object-color associative memory test. ‘Boundary’ trials were defined as trials on which the presented color frame was different from the previous trial; ‘non-boundary’ trials were all other trials (i.e. the presented color matched the color from the preceding trial). Boundary objects were therefore objects that were encoded concurrently with a color frame switch, while non-boundary objects were all other objects.
 
-![This is the caption](figures/chapter1_figure1)
+\begin{figure}
+  \centering
+  \includegraphics[width=.75\textwidth]{figures/chapter1_figure1.eps}
+  \caption[Schematic of the Task]{\textit{Schematic of the Task.} Participants made pleasant/unpleasant judgments on object-color pairs.  Critically, the color switched every 6 trials. Object-color associative memory test. (Bottom, left)  After encoding, participants performed a two alternative forced choice object-color memory test. The object-color test was in both Experiment 1 and 2.  Temporal order memory test.  (Bottom, right) After the color test, temporal order memory was tested using a two alternative forced choice task.  Participants indicated which of two studied objects appeared first in the list. The temporal order test was only in Experiment 2.}
+  \label{chapter1_figure1}
+\end{figure}
 
 The goal of Experiment 1 was to assess whether perceptual event boundaries increased object-color associative memory. We predicted that the memory enhancement would be specific to the boundary object-color pair.  A pattern of this nature would suggest a transient memory effect, perhaps driven by a boundary-driven allocation of attentional resources [@kurby_segmentation_2008].
 
@@ -47,7 +52,12 @@ Following each encoding list, we tested object-color associative memory.  To min
 
 ## Results
 
-![This is the caption](figures/chapter1_figure2)
+\begin{figure}
+  \centering
+  \includegraphics[width=.75\textwidth]{figures/chapter1_figure2.eps}
+  \caption[Behavioral Experiment 1 Results]{\textit{Experiment 1 Results.} Object-color associative memory accuracy (left) and response times are shown as a function of within-event position (right).  The boundary condition is plotted in yellow and non-boundary conditions are plotted in green.  Error bars represent the standard error of the mean. *p<.05, **p<.005, ***p<.001.}
+  \label{chapter1_figure2}
+\end{figure}
 
 ### Effect of perceptual boundaries on color memory performance.
 
@@ -95,7 +105,12 @@ After each study list, color memory was tested first, with the same design as Ex
 
 ## Results
 
-![This is the caption](figures/chapter1_figure3)
+\begin{figure}
+  \centering
+  \includegraphics[width=.75\textwidth]{figures/chapter1_figure3.eps}
+  \caption[Behavioral Experiment 2 Results]{\textit{Experiment 2 Results.} (A) Memory accuracy is shown as a function of test and condition. (B) Temporal order memory accuracy split into terciles by encoding response time of intervening boundary (for across-event) or non-boundary (for within-event) trial.  (C) Task response times during encoding as a function of event position. (D) Retrieval response times for correct trials as a function of condition and memory test. All error bars represent standard error of the mean across subjects.  *p<.05, **p<.005, ***p<.001. }
+  \label{chapter1_figure3}
+\end{figure}
 
 ### Effect of perceptual boundaries on object-color and temporal order memory
 
@@ -165,7 +180,12 @@ After each free recall period, participants were given an object-color memory ta
 
 ## Results
 
-![This is the caption](figures/chapter1_figure4)
+\begin{figure}
+  \centering
+  \includegraphics[width=.75\textwidth]{figures/chapter1_figure4.eps}
+  \caption[Behavioral Experiment 3 Results]{\textit{Experiment 3 Results.} (A) Task schematic. (B) Local forward (sum of n+1, n+2, n+3) transition likelihood as a function of within-event position. (C) Local backward (sum of n-1, n-2, n-3) transition likelihood as a function of within-event position. (D) Average transition distance as a function of within-event position.  (E) Likelihood of transition from pre-boundary items as a function of within-event position.  *p<.05, **p<.005.}
+  \label{chapter1_figure4}
+\end{figure}
 
 ### Free recall performance
 
@@ -231,6 +251,16 @@ Together, Experiments 1 and 2 suggest that while perceptual boundaries may enhan
 
 # Supplemental Figures
 
-![This is the caption](figures/chapter1_suppfigure1)
+\begin{figure}
+  \centering
+  \includegraphics[width=.75\textwidth]{figures/chapter1_suppfigure1.eps}
+  \caption[Behavioral Experiment 3: Proportion of trials recalled by serial position]{\textit{Proportion of trials recalled as a function of serial position.} The proportion of freely recalled items is plotted as a function of the serial position in which the object was studied.  Boundary trials are in yellow and non-boundary trials are in green.  Error bars represent the standard error of the mean across subjects.}
+  \label{chapter1_suppfigure1}
+\end{figure}
 
-![This is the caption](figures/chapter1_suppfigure2)
+\begin{figure}
+  \centering
+  \includegraphics[width=.75\textwidth]{figures/chapter1_suppfigure2.eps}
+  \caption[Behavioral Experiment 3: Lag conditional response probability.]{\textit{Lag conditional response probability.} Given the recall of a particular item, this figure shows the probability of the next recalled item as a function of its lag from the currently recalled item. On the y-axis is the conditional response probability and on the x-axis is the serial recall lag. For example, serial recall lag of 1 represents the likelihood of transitioning from n to n+1.}
+  \label{chapter1_suppfigure2}
+\end{figure}
