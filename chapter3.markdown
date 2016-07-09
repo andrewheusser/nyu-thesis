@@ -194,14 +194,14 @@ Prior work in rodents has leveraged the spatial specificity of ‘place cells’
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{figures/chapter3_suppfigure5.eps}
+  \includegraphics[width=.75\textwidth]{figures/chapter3_suppfigure5.eps}
   \caption[Source localization analysis with various statistical thresholds]{\textit{Source localization analysis with various statistical thresholds.} The statistical maps represent the group-level fit of the decreasing PAC by sequence position model to the theta-gamma coupling data at various thresholds (p<.001, .01 .1, all uncorrected).  Coronal slices are on the top row, axial slices in the middle row, and sagittal slices are along the bottom row.}
   \label{chapter3_suppfigure5}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{figures/chapter3_suppfigure6.eps}
+  \includegraphics[width=.75\textwidth]{figures/chapter3_suppfigure6.eps}
   \caption[Group-averaged gamma power binned by theta phase for regions of interest]{\textit{Group-averaged gamma power binned by theta phase for regions of interest.} The two clusters of sensors that showed a significant fit to the decreasing theta-gamma PAC by sequence position model.  On the left, data was extracted from the left posterior cluster of sensors that significantly fit the model of decreasing phase amplitude coupling.  On the top is the group-average across all trials (i.e. irrespective of sequence position).  In the middle, theta-gamma coupling is plotted as a function of sequence position only for trials where the order was later correct and on the bottom, only for trials where the order was later incorrect.  The plots on the right are the same as the left, but for the left lateral cluster of interest.}
   \label{chapter3_suppfigure6}
 \end{figure}
