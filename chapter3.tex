@@ -324,18 +324,18 @@ shape data to the structural brain image for each subject. To estimate
 source-space time-series data, we used a combination of source analysis
 script from the Fieldtrip software package as well as custom MATLAB
 scripts. A semi-realistic head model was constructed following methods
-described by \emph{ADD THIS REFERENCE} Nolte et al (2003). Then, using
-the MEG data from all trials (irrespective of sequence position), a
-common spatial filter was estimated for each point in a three
-dimensional grid representing potential neural source locations with 1
-centimeter spacing between points. The result of this analysis was a
-vector of spatial weights (1 x 157, i.e.~the total number of MEG
-sensors) mapping the contribution of each sensor's activity to a
-particular grid (i.e.~brain) location. Then, to derive source-space time
-series for each trial (-1 to 3.5 seconds), the matrix of sensor-level
-time series (157 sensors x 2251 time points for each trial) was
-multiplied by the spatial weight matrix, resulting in a single time
-course for each source location for each trial.
+described by \textcite{nolte_magnetic_2003}. Then, using the MEG data
+from all trials (irrespective of sequence position), a common spatial
+filter was estimated for each point in a three dimensional grid
+representing potential neural source locations with 1 centimeter spacing
+between points. The result of this analysis was a vector of spatial
+weights (1 x 157, i.e.~the total number of MEG sensors) mapping the
+contribution of each sensor's activity to a particular grid (i.e.~brain)
+location. Then, to derive source-space time series for each trial (-1 to
+3.5 seconds), the matrix of sensor-level time series (157 sensors x 2251
+time points for each trial) was multiplied by the spatial weight matrix,
+resulting in a single time course for each source location for each
+trial.
 
 Once the all the sensor-level data was projected into source space, we
 performed an analysis very similar to the sensor-level theta-gamma model

@@ -1,1 +1,1 @@
-Episodic memories are neural representations of our life experiences, and are often rich in contextual detail and can extend over long periods of time.  A great deal of exceptional work has been done to understand how our brains
+Episodic memories are neural imprints of our life experiences, and are often rich in contextual detail and can extend over long periods of time.  A great deal of exceptional work has been done to understand how our brains form memories for the individual components of an episode, but less is known about how 

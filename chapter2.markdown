@@ -1,5 +1,8 @@
 # Abstract
-GET ABSTRACT FROM CNS
+
+There is a growing body of evidence suggesting that we parse our experience into discrete events, or episodes. However, the neural mechanisms underlying this process are not yet clear.
+
+Neural oscillations are thought to play a role in event encoding, but typically studies have looked at power dynamics at short time scales (within a single trial), and little is known about how oscillatory power dynamics are modulated over longer experiences (i.e. on the order of minutes to hours).  In this experiment, we asked whether temporal dynamics in oscillatory power relate to the encoding of structuredexperiences, and also whether they relate to .   These results provide compelling evidence that oscillatory neural mechanisms are sensitive to event structure and relate to memory for episodic events.  
 
 # Introduction
 
