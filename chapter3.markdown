@@ -116,7 +116,7 @@ In the next analysis, we averaged the theta-binned gamma distributions for the 6
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{figures/chapter3_figure3.eps}
+  \includegraphics[width=.75\textwidth]{figures/chapter3_figure3.eps}
   \caption[Relative biases in gamma power over theta phase by sequence position and subsequent memory]{Relative biases in gamma power over theta phase by sequence position and subsequent memory.  A) Schematic representing our binning strategy.  We binned trials into early (1 and 2), middle (3 and 4), and late (5 and 6).  B) The distribution of gamma power over theta phase after removing the main effect of coupling for each sequence bin when temporal order was correct.  C) The same as B, but for sequences where order was incorrect. Stars represent phase bins where the statistical contrast (for example, early vs. the average of middle and late) was significant.  * p<.05}
   \label{chapter3_figure3}
 \end{figure}

@@ -1,5 +1,7 @@
 \section{Abstract}\label{abstract}
 
+GET ABSTRACT FROM CNS
+
 \section{Introduction}\label{introduction}
 
 Our experience of the world can be described as a continuous stream of
@@ -95,20 +97,23 @@ experimental designs. The frequency band that has received probably the
 least amount of attention with respect to memory is the beta (13-30 Hz)
 band. However, there is also some theoretical work suggesting that beta
 oscillations may play a role in the maintenance of cognitive states (for
-review, see Engel and Fries) and a few papers providing evidence that
-beta desynchronization plays a role in episodic memory encoding
-{[}hanslmayr stuff{]}. While the majority of this evidence comes from
-studies involving the maintenance of motor postures (i.e.~holding an arm
-in a particular posture) and/or motor plans, a few studies suggest beta
-may be important for the maintenance of mnemonic information (talon
-bauldtry papers) as well as the maintenance of an attentional state
-(buschman and miller). One recent study found that when recording from
-the prefrontal cortex of monkeys performing a 2-item order maintenance
-task, beta oscillations increased during the delay period and beta phase
-was related to subsequent temporal order memory success. Thus, beta
-oscillations may also be involved mnemonic processes and play a
-particular role in the maintenance of a cognitive state or `event model'
-(Engel and Fries).
+review, see \textcite{engel_beta-band_2010}) and a few papers providing
+evidence that beta desynchronization plays a role in episodic memory
+encoding
+\autocites{hanslmayr_relationship_2011}{hanslmayr_entrainment_2014}{hanslmayr_oscillations_2016}.
+While the majority of this evidence comes from studies involving the
+maintenance of motor postures (i.e.~holding an arm in a particular
+posture) and/or motor plans, a few studies suggest beta may be important
+for the maintenance of mnemonic information
+\autocites{tallon-baudry_sustained_1999}{tallon-baudry_oscillatory_2001}{tallon-baudry_oscillatory_2004}
+as well as the maintenance of an attentional state
+\autocite{buschman_top-down_2007}. One recent study found that when
+recording from the prefrontal cortex of monkeys performing a 2-item
+order maintenance task, beta oscillations increased during the delay
+period and beta phase was related to subsequent temporal order memory
+success. Thus, beta oscillations may also be involved mnemonic processes
+and play a particular role in the maintenance of a cognitive state or
+`event model' \autocite{engel_beta-band_2010}.
 
 In this study, we utilized magnetoencephalography (MEG) to ask whether
 dynamics in oscillatory power might support the formation of episodic
@@ -136,14 +141,15 @@ within an event that might index accumulating within-event information.
 
 \subsubsection{Participants}\label{participants}
 
-Twenty healthy native English speakers (XX males, age range: XX) were
-recruited from New York University and the greater New York Metropolitan
-area participated in the MEG experiment. All participants gave informed
-written consent in accordance with the University Committee on
-Activities Involving Human Subjects (UCAIHS). We excluded one subject
-for chance performance on the order memory test and one subject did not
-complete the study due to drowsiness. We excluded these participants,
-leaving 18 subjects for the remaining MEG analyses.
+Twenty healthy right-handed native English speakers (4 males, age range:
+21-35, mean age: 28) recruited from New York University and the greater
+New York metropolitan area participated in the MEG experiment. The study
+was approved by the University Committee on Activities Involving Human
+Subjects and all participants gave informed written consent. We excluded
+two subjects whose performance on the order memory test was not
+significantly different from chance (50\%, using binomial test) and one
+subject who did not complete the study due to drowsiness. We excluded
+these participants, leaving 17 subjects for the MEG analyses.
 
 \subsubsection{Materials}\label{materials}
 
@@ -159,7 +165,7 @@ randomized across subject.
 
 During encoding, participants made pleasant/unpleasant decisions on
 trial-unique objects that were paired with a colored background frame
-(see Figure 1). Specifically, participants were instructed to imagine
+(see Figure 2.1). Specifically, participants were instructed to imagine
 each object in the color of the background frame and press a button to
 indicate whether or not the combination was pleasant. Additionally, we
 instructed participants to integrate the objects together by imagining
@@ -215,49 +221,55 @@ the two test items for the two conditions was identical.
 \subsubsection{MEG recordings and data
 processing}\label{meg-recordings-and-data-processing}
 
-MEG data were recorded using a 157-channel whole-head axial gradiometer
+EG data were recorded using a 157-channel whole-head axial gradiometer
 system (KIT, Kanazawa, Japan). Three reference channels seated above the
 MEG system were also recorded and used to remove ambient electromagnetic
-environmental noise from the data. MEG data were acquired with a
-sampling rate of 1000 Hz, which was filtered online between XX and XX
-Hz, with a notch filter at XX Hz. To measure head position, 5
-electromagnetic coils were attached to a participant's head. Coil
-locations were determined by registering scalp coil positions with 3D
-digitized head shape data (software: Source Signal Imaging, Inc.;
-hardware: Polhemus, Inc.), which was collected before MEG recording. The
-anatomical locations used to register the coils with the head shape data
-were the nasion and the left and right periauricular points. The coils
-were localized to the MEG sensors at the beginning and end of the
-experiment.
+environmental noise from the data. MEG data were acquired in DC with a
+sampling rate of 1000 Hz, a low pass filter at 200 Hz and a notch filter
+at 60 Hz to remove line noise. To measure head position, 5
+electromagnetic coils were attached to a participant's head during
+recording. Coil locations were determined by registering scalp coil
+positions with 3D digitized head shape data (software: Source Signal
+Imaging, Inc.; hardware: Polhemus, Inc.), which was collected before MEG
+recording. The anatomical locations used to register the coils with the
+head shape data were the nasion and the left and right periauricular
+points. The coils were localized to the MEG sensors at the beginning and
+end of the experiment.
 
-MEG data were preprocessed in the following way: raw data were loaded
-into Matlab (version 7.10, Mathworks) and malfunctioning channels
-(average per subject: XX) were immediately removed and interpolated
-using a nearest neighbors approach (CITATION). Then, data were denoised
-using a time-shifted principal components analysis approach, which
-removed ambient environmental noise using 3 reference channels
-(CITATION). The remaining preprocessing steps used the Fieldtrip M/EEG
-software package (CITATION). The data were band-pass filtered from 1-100
-Hz. Data were epoched from -4 to 4 seconds surrounding trial onset to
-assure adequate time for spectral estimation of both pre- and
-post-stimulus activity. The data were down-sampled to 500 Hz to speed
-processing time in later steps. Finally, to facilitate interpretation of
-topographies, we transformed the MEG data from axial to planar gradient.
-One advantage of this linear transformation is that planar signal
-amplitude is typically largest directly above the source, whereas axial
-signal amplitudes are typically maximal on either side of the neural
-source of the signal.
+MEG data were preprocessed as follows: raw MEG data were loaded into
+MATLAB (version 7.10, Mathworks) and malfunctioning channels (average
+per subject: \textasciitilde{}2) were immediately removed and
+interpolated with the average of its nearest neighbors. Then, data were
+denoised using a time-shifted principal components analysis approach
+(temporal shift parameter = 100ms), which removed ambient environmental
+noise using 3 reference channels \autocite{de_cheveigne_denoising_2007}.
+The remaining preprocessing steps utilized the Fieldtrip M/EEG software
+package \autocite{oostenveld_fieldtrip:_2010} and custom MATLAB scripts.
+The data were band-pass filtered (default settings in eegfilt.m) from
+1-100 Hz. Then, the data were epoched from -4 to 4 seconds surrounding
+trial onset to assure adequate time for spectral estimation of both pre-
+and post-stimulus activity. The epochs were downsampled to 500 Hz to
+speed processing time in later steps. Finally, to facilitate
+interpretation of topographic plots, we transformed the MEG data from
+axial to planar gradient. One advantage of this linear transformation is
+that planar signal amplitude is typically largest directly above the
+source, whereas axial signal amplitudes are typically maximal on either
+side of the neural source of the signal. This transformation was
+performed for all topographic analyses, but not the source-space
+analyses.
 
 After preprocessing, the MEG data were examined for artifacts. The
 artifact rejection approach we took was three-fold: First, excessively
 noisy trials and channels were removed using Fieldtrip's visual artifact
-rejection `trial summary' feature. Specifically, channels trials for
+rejection `trial summary' feature. Specifically, channels and trials for
 which the across-trial variance exceeded 3 standard deviations from the
-mean were removed from the analysis. Then, independent components
-analysis was implemented to remove components related to eye blinks, eye
-movements, and heartbeat-related artifacts. Finally, remaining trials
-were visually inspected and epochs containing any remaining artifacts
-were removed from the dataset (\textasciitilde{}XX\% of trials).
+mean were identified and removed from the analysis. Then, independent
+component analysis was implemented to remove components related to eye
+blinks, eye movements, and heartbeat-related artifacts. Finally,
+remaining trials were visually inspected and epochs containing any
+remaining artifacts were removed from the dataset. The group average
+proportion of trials removed due to artifacts was
+\textasciitilde{}8.6\%.
 
 \subsubsection{Time-Frequency Analyses}\label{time-frequency-analyses}
 
@@ -281,47 +293,47 @@ Analyses}\label{power-accumulation-analyses}
 
 To determine whether oscillatory power increased as a function of within
 event position, we adopted a general linear model approach (GLM). For
-each trial (\textasciitilde{}XX after artifact rejection), we averaged
-oscillatory power across the entire trial (0 to 5 seconds) for each
-frequency (1-100 Hz) and each sensor (n=157). We then set up our `power
-accumulation' model. The power accumulation model was simply a
-mean-centered vector that linearly increased from 1 to 6 within each
-event and reset back to 1 at event boundaries (see Figure 2). Put
-another way, the accumulation model indexed the within-event position of
-each trial. Also included in the GLM was a regressor modeling the mean
-signal across the entire experiment as well as a regressor to account
-for mean signal differences across the 16 blocks. We then regressed the
-power data (separately for each band and sensor) against this model to
-obtain a t-statistic representing the fit of the oscillatory power data
-to the `accumulation' model. A model fit statistic (t-value) was
-obtained for each frequency bin and subject (as well as each sensor and
-time point depending upon the analysis). Finally, to look for
-reliability of these model fits across subjects, we performed a
-group-level one-sample t-test at each frequency bin-sensor data point.
+each trial, we averaged oscillatory power across the entire trial (0 to
+5 seconds) for each frequency (1-100 Hz) and each sensor (n=157). We
+then set up our `power accumulation' model. The power accumulation model
+was simply a mean-centered vector that linearly increased from 1 to 6
+within each event and reset back to 1 at event boundaries (see Figure
+2.2). Put another way, the accumulation model indexed the within-event
+position of each trial. Also included in the GLM was a regressor
+modeling the mean signal across the entire experiment as well as a
+regressor to account for mean signal differences across the 16 blocks.
+We then regressed the power data (separately for each band and sensor)
+against this model to obtain a t-statistic representing the fit of the
+oscillatory power data to the `accumulation' model. A model fit
+statistic (t-value) was obtained for each frequency bin and subject (as
+well as each sensor and time point depending upon the analysis).
+Finally, to look for reliability of these model fits across subjects, we
+performed a group-level one-sample t-test at each frequency bin-sensor
+data point.
 
 \subsubsection{Source Localization
 Analysis}\label{source-localization-analysis}
 
 Beamformer analysis (DICS; CITATION) was performed to estimate neural
 sources of the power accumulation effects. Each subject's data was first
-registered to a structural template MPRAGE brain (FSL, XX) by aligning
-anatomical landmarks (nasion, left/right periauricular points) from the
-digitized head shape data to the structural brain image. Then,
-oscillatory power (for the bands of interest: delta, theta and beta) was
-computed in source space for each trial during the stimulus on period
-(0-2.5 seconds). We used only the `stimulus on' periods in this analysis
-since this time period was the most significant in the sensor space
-analyses (see Figure 3). The source-space data were fit to the same
-power accumulation model described above, to identify putative
-generators of the ramping within-event oscillatory neural activity.
-Group-level reliability was then calculated with a one-sample t-test
-across subjects.
+registered to a structural template MPRAGE brain
+\autocite{jenkinson_fsl_2012} by aligning anatomical landmarks (nasion,
+left/right periauricular points) from the digitized head shape data to
+the structural brain image. Then, oscillatory power (for the bands of
+interest: delta, theta and beta) was computed in source space for each
+trial during the stimulus on period (0-2.5 seconds). We used only the
+`stimulus on' periods in this analysis since this time period was the
+most significant in the sensor space analyses (see Figure 2.3). The
+source-space data were fit to the same power accumulation model
+described above, to identify putative generators of the ramping
+within-event oscillatory neural activity. Group-level reliability was
+then calculated with a one-sample t-test across subjects.
 
 \section{Results}\label{results}
 
 \begin{figure}
   \centering
-  \includegraphics[width=.75\textwidth]{figures/chapter2_figure1.eps}
+  \includegraphics[width=\textwidth]{figures/chapter2_figure1.eps}
   \caption[Schematic of the paradigm and behavioral findings]{\textit{Schematic of the paradigm and behavioral findings.} (A) Participants made pleasantness judgments on trial-unique objects, one at a time, embedded on colored background frames.  After each encoding block, participants performed a color-object memory test (B) and a temporal order test (C).  Plotted in (D) is performance on the object color memory test and the temporal order memory test (B=Boundary condition, NB=Non-boundary condition; AB=Across-boundary condition, WE=Within-Event condition; p<.001).}
   \label{chapter2_figure1}
 \end{figure}
@@ -332,12 +344,12 @@ On each encoding trial, participants were instructed to imagine an
 object in the color of the background frame and decide if the
 combination was pleasant or unpleasant (62\% rated as pleasant).
 Encoding task response times (RTs) varied as a function of within-event
-position {[}F(5,80)=16.44, p\textless{}.0001{]}, where follow-up
-pairwise t-tests reveal that RTs to boundary items were significantly
-slower than RTs to other positions {[}2-5, all p's\textless{}.001,
-corrected for multiple comparisons{]} and there were no other
-differences. This boundary-related RT cost replicates a previous study
-using this behavioral paradigm (Heusser et al, 20XX).
+position {[}\emph{F}(5,80) = 16.44, \emph{p} \textless{} .0001{]}, where
+follow-up pairwise t-tests reveal that RTs to boundary items were
+significantly slower than RTs to other positions {[}2-5, all \emph{p}'s
+\textless{} .001, corrected for multiple comparisons{]} and there were
+no other differences. This boundary-related RT cost replicates a
+Experiment 2 from Chapter 1.
 
 \subsubsection{Temporal Order Memory}\label{temporal-order-memory}
 
@@ -347,23 +359,25 @@ Methods for more details). We predicted that within-event temporal order
 memory would be greater than across-event order memory. Consistent with
 our hypothesis, temporal order memory was significantly more accurate in
 the within-event condition than the across-boundary condition
-{[}within-event condition: Mean=.73, SD=.12; across-boundary condition:
-Mean=.57, SD=.09; t(17)=5.56, p\textless{}.0001{]}. Critically, the
-temporal lag between the retrieval probes in both conditions was fixed
-at three and thus, the only difference between conditions was the
-occurrence of an intervening event boundary in the across-boundary
-condition. These data suggest that event boundaries result in reduced
-temporal order memory (relative to within-event temporal order memory),
-consistent with previous studies (Heusser et al, 20XX; Dubrow et al,
-2013). Next, we tested whether response times during the temporal order
-retrieval task varied by condition. We hypothesized that even when
-participants make a correct temporal order response, they might be
-slower to respond to across-boundary order test trials as compared to
-the within-event test trials. Consistent with this prediction
-across-boundary test trial RTs {[}M=3.79s, SD= 1.67{]} were
-significantly slower than within-event test trial RTs {[}M=3.43s,
-SD=1.22; t(17)=2.36, p\textless{}.05{]}. Thus, in addition to reduced
-accuracy, when participants made a correct response in the
+{[}within-event condition: \(\mu\) = .73, \(\sigma\) = .12;
+across-boundary condition: \(\mu\) = .57, \(\sigma\) = .09; \emph{t}(17)
+= 5.56, \emph{p} \textless{} .0001{]}. Critically, the temporal lag
+between the retrieval probes in both conditions was fixed at three and
+thus, the only difference between conditions was the occurrence of an
+intervening event boundary in the across-boundary condition. These data
+suggest that event boundaries result in reduced temporal order memory
+(relative to within-event temporal order memory), consistent with
+previous studies
+\autocites{dubrow_influence_2013}{dubrow_temporal_2014}. Next, we tested
+whether response times during the temporal order retrieval task varied
+by condition. We hypothesized that even when participants make a correct
+temporal order response, they might be slower to respond to
+across-boundary order test trials as compared to the within-event test
+trials. Consistent with this prediction across-boundary test trial RTs
+{[}\(\mu\) = 3.79 (s), \(\sigma\) = 1.67{]} were significantly slower
+than within-event test trial RTs {[}\(\mu\) = 3.43 (s), \(\sigma\) =
+1.22; \emph{t}(17) = 2.36, \emph{p}\textless{}.05{]}. Thus, in addition
+to reduced accuracy, when participants made a correct response in the
 across-boundary order condition, they were significantly slower.
 
 \subsubsection{Object-Color Memory}\label{object-color-memory}
@@ -376,26 +390,27 @@ two positions. After each encoding block, we presented a previously
 studied object along with a target color (i.e.~that color that was
 studied with the word) and a lure color (a color from a neighboring
 event). Consistent with our hypothesis, object-color associative memory
-was significantly greater at boundaries {[}M=87.27\%, SD=8.41\%{]} then
-at non-boundaries {[}M=79.08\%, SD=9.25\%{]}, suggesting that event
-boundaries facilitated object-color binding {[}t(17)=5.54,
-p\textless{}.001{]}. Next, we asked whether correct responses were
-speeded in the boundary condition, relative to the non-boundary
-condition. We hypothesized that even when conditions were matched for
-accuracy, boundary trials would be accessed more quickly than
-non-boundary trials. Indeed, correct boundary RTs {[}M=2.05s, SD=.58{]}
-were on average half of a second faster than correct non-boundary RTs
-{[}M=2.54s, SD=.84{]}, suggesting that color-object memory on boundary
+was significantly greater at boundaries {[}\(\mu\) = 87.27\%, \(\sigma\)
+= 8.41\%{]} then at non-boundaries {[}\(\mu\) = 79.08\%, \(\sigma\) =
+9.25\%{]}, suggesting that event boundaries facilitated object-color
+binding {[}\emph{t}(17) = 5.54, \emph{p} \textless{} .001{]}. Next, we
+asked whether correct responses were speeded in the boundary condition,
+relative to the non-boundary condition. We hypothesized that even when
+conditions were matched for accuracy, boundary trials would be accessed
+more quickly than non-boundary trials. Indeed, correct boundary RTs
+{[}\(\mu\) = 2.05 (s), \(\sigma\) = .58{]} were on average half of a
+second faster than correct non-boundary RTs {[}\(\mu\) = 2.54 (s),
+\(\sigma\) = .84{]}, suggesting that color-object memory on boundary
 trials was accessed significantly faster than non-boundary trials
-{[}t(17)=-4.85, p\textless{}.001{]}. Both the temporal order and color
-memory findings are consistent with previous studies in our lab (Heusser
-et al 20XX). The remainder of this manuscript will focus on oscillatory
-activity during the encoding of events related to the integration of
-within-event information.
+{[}\emph{t}(17) = -4.85, \emph{p} \textless{} .001{]}. Both the temporal
+order and color memory findings are consistent with the results
+presented in Chapter 1. The remainder of this manuscript will focus on
+oscillatory activity during the encoding of events related to the
+integration of within-event information.
 
 \begin{figure}
   \centering
-  \includegraphics[width=.75\textwidth]{figures/chapter2_figure2.eps}
+  \includegraphics[width=\textwidth]{figures/chapter2_figure2.eps}
   \caption[Within-event power accumulation analyses]{\textit{Within-event power accumulation analyses.} (A) Visual depiction of the ‘accumulation model’.  Oscillatory power was fit to a model that increased linearly within an event and reset at boundaries. (B) Distribution of group-level fits to the accumulation model as a function of frequency (in blue) reveal maximally significant peaks in delta (1), theta (2), and two peaks in beta (3 and 4).  In gray, the average group-level fits to the accumulation model for the 5 ‘out-of-phase’ models.  Dashed line indicates p<.001 significance threshold.  (C) Group-level accumulation model fits were computed for each time-frequency data point separately (averaged across a sensors).  Time-frequency data marked in black were significant at p<.001, cluster threshold p<.001, corrected at p<.05.}
   \label{chapter2_figure2}
 \end{figure}
@@ -406,38 +421,39 @@ events}\label{oscillatory-power-increases-within-events}
 To test our hypothesis that oscillatory power would increase within an
 event (i.e.~6 objects studied in with the same color) and drop off at
 event boundaries, we adopted a model-based regression approach (Figure
-2, see Methods for details). For each subject, we fit an `accumulation'
-model to the trial-level oscillatory power estimates. As described in
-the Methods, the accumulation model was simply a function that increased
-linearly within each event (i.e.~6 adjacent items with the same color
-backgrund; see Figure 2 for visual depiction). Power was averaged within
-each trial (0 - 2.5 seconds) and the modulation of power across trials
-was fit to the accumulation model. First, we performed this across-trial
-regression analysis for each frequency band separately (1-100 Hz),
-averaging across all MEG sensors. The results show well-defined peaks in
-the distribution of model fits in delta (2 Hz) and theta (7 Hz), as well
-as two peaks in the beta band (16 and 26 Hz), indicating that these
-frequency bands significantly fit the accumulation model
-{[}p's\textless{}.001, Figure 2{]}. In addition to the parametric
-statistics, we also performed a permutation analysis, where for each
-iteration (n=1000), we shuffled the trial-level data (within-subject)
-and refit the model for every subject and then recomputed the
-group-level statistics. The result was a null distribution of
-group-level model fit significance values for each frequency band. The
-non-parametric statistics were very similar to the parametric tests and
-each frequency peak (in delta, theta and beta) remained significant
-(p\textless{}.001). As an additional control analysis, we recomputed the
-fits between the power data in each frequency but shifted the phase of
-the accumulation model. We predicted that the model that was `in-phase'
-with the event structure of our task would be the most significant,
-while `out-of-phase' models would not show a reliable relationship to
-the data. There were 5 possible phase-shifted models. None of the 5
-out-of-phase models reached significance in any frequency band at our
-statistical threshold (p\textgreater{}.001). Thus, the model that was
-in-phase with the event structure of the task best fit the data. In
-summary, power in delta, theta and beta significantly co-varied with the
-event structure of the experiment, suggesting that these bands may play
-a role in event formation and segmentation.
+2.2, see Methods for details). For each subject, we fit an
+`accumulation' model to the trial-level oscillatory power estimates. As
+described in the Methods, the accumulation model was simply a function
+that increased linearly within each event (i.e.~6 adjacent items with
+the same color background; see Figure 2.2 for visual depiction). Power
+was averaged within each trial (0 - 2.5 seconds) and the modulation of
+power across trials was fit to the accumulation model. First, we
+performed this across-trial regression analysis for each frequency band
+separately (1-100 Hz), averaging across all MEG sensors. The results
+show well-defined peaks in the distribution of model fits in delta (2
+Hz) and theta (7 Hz), as well as two peaks in the beta band (16 and 26
+Hz), indicating that these frequency bands significantly fit the
+accumulation model {[}\emph{p}'s \textless{} .001, Figure 2.2{]}. In
+addition to the parametric statistics, we also performed a permutation
+analysis, where for each iteration (n=1000), we shuffled the trial-level
+data (within-subject) and refit the model for every subject and then
+recomputed the group-level statistics. The result was a null
+distribution of group-level model fit significance values for each
+frequency band. The non-parametric statistics were very similar to the
+parametric tests and each frequency peak (in delta, theta and beta)
+remained significant (\emph{p} \textless{} .001). As an additional
+control analysis, we recomputed the fits between the power data in each
+frequency but shifted the phase of the accumulation model. We predicted
+that the model that was `in-phase' with the event structure of our task
+would be the most significant, while `out-of-phase' models would not
+show a reliable relationship to the data. There were 5 possible
+phase-shifted models. None of the 5 out-of-phase models reached
+significance in any frequency band at our statistical threshold
+(\emph{p} \textgreater{} .001). Thus, the model that was in-phase with
+the event structure of the task best fit the data. In summary, power in
+delta, theta and beta significantly co-varied with the event structure
+of the experiment, suggesting that these bands may play a role in event
+formation and segmentation.
 
 \begin{figure}
   \centering
@@ -461,7 +477,7 @@ we computed a time-frequency spectrogram (-1 to 4 seconds in 50ms bins,
 to each time-frequency data point. This analysis resulted in a single
 time-frequency spectrogram (averaged across all MEG sensors), where each
 data point represents the fit to the accumulation model at a particular
-time point in a particular frequency (Figure 2). The result of this
+time point in a particular frequency (Figure 2.2). The result of this
 analysis suggests that model fits were maximal during the time that the
 stimulus was on the screen, but were also robust in the post-stimulus
 time window (after 2.5 seconds when the stimulus was removed from the
@@ -480,12 +496,12 @@ within-event power accumulation effects. We limited our analyses to
 frequency bands that displayed peaks in the distribution of accumulation
 model fits (specifically, the delta, theta and beta bands). We found
 that both delta and theta oscillatory accumulation model fits were
-significant and maximal over posterior sensors {[}Figure 3,
-p\textless{}.001, cluster threshold: p\textless{}.001, corrected at
-p\textless{}.05{]}. On the other hand, model fits to beta power were
-significant in more sensors distributed across most of the scalp
-{[}p\textless{}.001, cluster threshold: p\textless{}.001, corrected at
-p\textless{}.05{]}.\\
+significant and maximal over posterior sensors {[}Figure 2.3, \emph{p}
+\textless{} .001, cluster threshold: \emph{p} \textless{} .001,
+corrected at \emph{p} \textless{} .05{]}. On the other hand, model fits
+to beta power were significant in more sensors distributed across most
+of the scalp {[}\emph{p} \textless{} .001, cluster threshold: \emph{p}
+\textless{} .001, corrected at \emph{p} \textless{} .05{]}.\\
 To verify that the within-event power increases that we've characterized
 thus far were driven by gradual increases in power within an event that
 drops at event boundaries (rather than being driven by another pattern
@@ -498,7 +514,7 @@ oscillatory power for each frequency band across the entire duration of
 the experiment. To increase our signal to noise ratio, we downsampled
 our time courses, binning the power time courses into 500 millisecond
 chunks and and averaging. We also averaged over all 16 encoding blocks
-(and across subjects). Plotted in Figure 3 is the time course of
+(and across subjects). Plotted in Figure 2.3 is the time course of
 oscillatory power for delta, theta and beta across an entire encoding
 block (i.e.~36 trials / 6 events). Each gray line represents the slope
 of the power increase within an event. Visual inspection of the time
@@ -513,36 +529,35 @@ confounds}\label{ruling-out-potential-confounds}
 We performed a series of control analyses to consider possible confounds
 and alternative explanations. First, we noted that oscillatory power
 appeared to increase not only within an event, but also across the
-duration of a study block (see Figure 3). In other words, we observed
+duration of a study block (see Figure 2.3). In other words, we observed
 power increases within an event but also power increases over a block of
 36 trials. To test whether our accumulation model analyses were driven
 by power changes across an encoding block (rather than power increases
 within an event), we regressed out block-level linear trends and
 recomputed the model fits on the residuals of this regression. This did
 not account for the results, as the effects remained statistically
-robust (see Supplemental Figure XX). We also noticed that overall power
-in the first event of a block was notably lower than the rest of the
-events. Thus, we removed the first event from the analyses and
-recomputed the accumulation model analyses. Again, this did not change
-the pattern of results (see Supplemental Figure XX). Another possibility
-is that evoked responses (i.e.~ERPs) might contribute to this
-accumulation effect, rather than induced oscillatory activity. To rule
-out this possibility, we subtracted out the average evoked response from
-each trial and recomputed the accumulation analysis. This did not change
-the results, suggesting that trial-evoked responses did not explain the
-power accumulation effects. Finally, we tested whether the accumulation
-effects were sensitive to baseline correction. We baseline corrected
-each trial to the pre-stimulus period (-1000 to -500 ms). Interestingly,
-the effects were eliminated (See Supplemental Figure XX), which is
-consistent with the idea that the power accumulation effects were not
-limited to the periods when the stimulus was on the screen, but may also
-exist in the pre-stimulus periods. This interpretation is also supported
-by the fact that the pre-stimulus oscillatory power in delta, theta and
-beta fits the accumulation model (See Figure 3). Together, these data
-provide compelling evidence that oscillatory power in delta, theta and
-beta increases within an event and drops at event boundaries, and that
-this dynamic pattern likely reflects cognitive processes that evolve
-over the timescale of a temporally-extended episodic experience.
+robust (STATS). We also noticed that overall power in the first event of
+a block was notably lower than the rest of the events. Thus, we removed
+the first event from the analyses and recomputed the accumulation model
+analyses. Again, this did not change the pattern of results (STATS).
+Another possibility is that evoked responses (i.e.~ERPs) might
+contribute to this accumulation effect, rather than induced oscillatory
+activity. To rule out this possibility, we subtracted out the average
+evoked response from each trial and recomputed the accumulation
+analysis. This did not change the results, suggesting that trial-evoked
+responses did not explain the power accumulation effects. Finally, we
+tested whether the accumulation effects were sensitive to baseline
+correction. We baseline corrected each trial to the pre-stimulus period
+(-1000 to -500 ms). Interestingly, the effects were eliminated (STATS),
+which is consistent with the idea that the power accumulation effects
+were not limited to the periods when the stimulus was on the screen, but
+may also exist in the pre-stimulus periods. This interpretation is also
+supported by the fact that the pre-stimulus oscillatory power in delta,
+theta and beta fits the accumulation model (See Figure 2.3). Together,
+these data provide compelling evidence that oscillatory power in delta,
+theta and beta increases within an event and drops at event boundaries,
+and that this dynamic pattern likely reflects cognitive processes that
+evolve over the timescale of a temporally-extended episodic experience.
 
 \subsubsection{Source Localization of the power accumulation
 effects}\label{source-localization-of-the-power-accumulation-effects}
@@ -558,7 +573,7 @@ accumulation effects during the `stimulus on' period in the trial (0 to
 then fit the source space power data to the same power accumulation
 model as described above. We (primarily) focused our analyses on the
 peaks in the frequency distribution of accumulation model fits (as shown
-in Figure 2), since these were the frequency bands that best fit our
+in Figure 2.2), since these were the frequency bands that best fit our
 power accumulation model. Delta (2 Hz) power accumulation was localized
 to the right hippocampus and right cerebellum. High theta (7 Hz) was
 localized to the right paracentral lobule. Low beta (16 Hz) localized to
@@ -573,14 +588,15 @@ left cerebellum (vermis VIIIa), and the left superior frontal sulcus.
 
 Visual inspection revealed overlap in the source localization for theta
 (4 Hz) and low beta (16 Hz). To quantify this overlap, we ran a
-conjunction analysis (joint p\textless{}.0001, individuals maps
-thresholded at p\textless{}.01). This analysis revealed that source
-localization for beta and theta overlapped in the left MTL and a left
-insular region (Figure 3). Thus, while low frequency power accumulation
-(4 Hz and lower) was localized primarily to the hippocampus and MTL,
-higher frequency beta power accumulation was localized to frontal and
-parietal regions (as well as MTL and LO) and there was overlap between
-the theta and beta source localization in the left MTL and insula.
+conjunction analysis (joint \emph{p} \textless{} .0001, individuals maps
+thresholded at \emph{p} \textless{} .01). This analysis revealed that
+source localization for beta and theta overlapped in the left MTL and a
+left insular region (Figure 2.3). Thus, while low frequency power
+accumulation (4 Hz and lower) was localized primarily to the hippocampus
+and MTL, higher frequency beta power accumulation was localized to
+frontal and parietal regions (as well as MTL and LO) and there was
+overlap between the theta and beta source localization in the left MTL
+and insula.
 
 \begin{figure}
   \centering
@@ -606,16 +622,18 @@ an event. We excluded boundary trials (i.e.~position 1) from this
 analysis, as they were not part of the temporal order memory decision
 (within-event temporal order judgment was on trials 2 and 6). In all
 three bands, we observed a significant linear trend for events where
-order was later correct {[}delta: F(1,17)=19.88, p\textless{}.001;
-theta: F(1,17)=18.82, p\textless{}.001; beta: F(1,17)=29.83,
-p\textless{}.001{]}, but not for incorrect events {[}delta:
-F(1,17)=.294, p\textgreater{}.1; theta: F(1,17)=1.53, p\textgreater{}.1;
-beta: F(1,17)=1.95, p\textgreater{}.1{]}. For beta (but not delta or
-theta; p's\textgreater{}.2), there was also a significant position by
-memory interaction {[}F(4,68)=3.11, p=.02{]} and a trending interaction
-of the linear contrast {[}F(4,68)=3.76, p=.069{]}. Since differences in
-trial numbers between conditions can influence estimates of oscillatory
-power, we performed an additional sub-sampling analysis where for each
+order was later correct {[}delta: \emph{F}(1,17) = 19.88, \emph{p}
+\textless{} .001; theta: \emph{F}(1,17) = 18.82, \emph{p} \textless{}
+.001; beta: \emph{F}(1,17) = 29.83, \emph{p} \textless{} .001{]}, but
+not for incorrect events {[}delta: \emph{F}(1,17) = .294, \emph{p}
+\textgreater{} .1; theta: \emph{F}(1,17) = 1.53, \emph{p} \textgreater{}
+.1; beta: \emph{F}(1,17) = 1.95, \emph{p} \textgreater{} .1{]}. For beta
+(but not delta or theta; \emph{p}'s \textgreater{} .2), there was also a
+significant position by memory interaction {[}\emph{F}(4,68) = 3.11,
+\emph{p} = .02{]} and a trending interaction of the linear contrast
+{[}\emph{F}(4,68) = 3.76, \emph{p} = .069{]}. Since differences in trial
+numbers between conditions can influence estimates of oscillatory power,
+we performed an additional sub-sampling analysis where for each
 iteration (n=1000) we randomly selected a subsample of trials to match
 the number of trials between conditions. Since every subject had more
 trials for the remember condition, this analysis essentially matched the
@@ -624,28 +642,30 @@ number of trials in the `hits' bin to the number of trials in the
 averaged across the iterations and recomputed our statistics. This
 analysis suggested that differences in trial numbers going into the
 power estimates did not account for differences in the linear trend as a
-function of conditions {[}linear trend for hits: delta: F(1,17)=20.74,
-p\textless{}.001; theta: F(1,17)=18.24, p\textless{}.001; beta:
-F(1,17)=30.19, p\textless{}.001; linear trend for misses same as
-reported above{]}. The significant memory by position interaction
-{[}F(1,17)=3.05, p=.02{]} and trending interaction in beta power of the
-linear contrast (hits vs.~misses) was also replicated {[}F(1,17)=3.78,
-p=.07{]}. In summary, oscillatory power (in delta and theta, but most
-robustly in beta) during successful order encoding linearly increased
-over trials within an event and this linear pattern was not present when
-temporal order later incorrect.
+function of conditions {[}linear trend for hits: delta: \emph{F}(1,17) =
+20.74, \emph{p} \textless{} .001; theta: \emph{F}(1,17) = 18.24,
+\emph{p} \textless{} .001; beta: \emph{F}(1,17) = 30.19, \emph{p}
+\textless{} .001; linear trend for misses same as reported above{]}. The
+significant memory by position interaction {[}\emph{F}(1,17) = 3.05,
+\emph{p} = .02{]} and trending interaction in beta power of the linear
+contrast (hits vs.~misses) was also replicated {[}\emph{F}(1,17) = 3.78,
+\emph{p} = .07{]}. In summary, oscillatory power (in delta and theta,
+but most robustly in beta) during successful order encoding linearly
+increased over trials within an event and this linear pattern was not
+present when temporal order later incorrect.
 
 Notably, this linear accumulation effect was not driven by overall
 greater power for temporal order correct events. In fact, the opposite
 pattern was true: trials for which temporal order was later tested
 actually showed greater oscillatory power for misses as compared to hits
-{[}delta, 2nd position: t(17)=-2.12, p\textless{}.05; delta, 6 th
-position: t(17)=-2.09, p=.051; theta, 2nd position: t(17)=-2.03, p=.057;
-theta, 6th position: t(17)=-2.28, p\textless{}.05; beta, 2nd position:
-t(17)=-2.26, p\textless{}.05; no other significant differences{]}. Thus,
-the pattern of power accumulation across an event was predictive later
-order memory, but the absolute magnitude of power (in all three bands)
-was predictive of later mnemonic errors.
+{[}delta, 2nd position: \emph{t}(17) = -2.12, \emph{p} \textless{} .05;
+delta, 6th position: \emph{t}(17) = -2.09, \emph{p} = .051; theta, 2nd
+position: \emph{t}(17) = -2.03, \emph{p} = .057; theta, 6th position:
+\emph{t}(17) = -2.28, \emph{p} \textless{} .05; beta, 2nd position:
+\emph{t}(17) = -2.26, \emph{p} \textless{} .05; no other significant
+differences{]}. Thus, the pattern of power accumulation across an event
+was predictive later order memory, but the absolute magnitude of power
+(in all three bands) was predictive of later mnemonic errors.
 
 \subsubsection{Leveraging across-subject variability in power
 accumulation model
@@ -660,15 +680,16 @@ to subjects that poorly fit the model. We limited our analyses to the
 delta, theta and beta bands averaging across the sensors that
 significantly fit the accumulation model (at the group-level).
 Consistent with our prediction, beta accumulation model fits were
-positively correlated with within-event order memory {[}Figure 4; robust
-regression: t(16)=1.73, p\textless{}.05, one-tailed{]}. There was no
-such relationship in delta or theta {[}p's\textgreater{}.1{]}. It's
-worthwhile to note that if when we analyzed the data with a stricter
-statistical threshold (that is, averaging across sensors that exceeded a
-p\textless{}.0001 threshold), the correlation became stronger {[}robust
-regression: {[}t(16)=2.16, p\textless{}.05{]}. In summary, participants
-whose beta power dynamics better fit the event accumulation model showed
-relatively better temporal order memory.
+positively correlated with within-event order memory {[}Figure 2.4;
+robust regression: \emph{t}(16) = 1.73, \emph{p} \textless{} .05,
+one-tailed{]}. There was no such relationship in delta or theta
+{[}\emph{p}'s \textgreater{} .1{]}. It's worthwhile to note that if when
+we analyzed the data with a stricter statistical threshold (that is,
+averaging across sensors that exceeded a p\textless{}.0001 threshold),
+the correlation became stronger {[}robust regression: {[}\emph{t}(16) =
+2.16, \emph{p} \textless{} .05{]}. In summary, participants whose beta
+power dynamics better fit the event accumulation model showed relatively
+better temporal order memory.
 
 \begin{figure}
   \centering
@@ -696,12 +717,12 @@ trial before a boundary) and trials in position 1 (the first trial after
 a boundary). We hypothesized that power would be significantly higher
 for trials in the last position of an event compared to trials in the
 first position of an event. We found this to be true for all three bands
-{[}delta: t(17)=4.85, p\textless{}.001; theta: t(17)=5.05,
-p\textless{}.001; beta: t(17)=7.52, p\textless{}.001{]}. While this
-analysis is not entirely independent from within-event power
-accumulation analyses described earlier, it provides corroborating
-evidence that event boundaries result in a drop in a significant
-oscillatory power.
+{[}delta: \emph{t}(17) = 4.85, \emph{p} \textless{} .001; theta:
+\emph{t}(17) = 5.05, \emph{p} \textless{} .001; beta: \emph{t}(17) =
+7.52, \emph{p} \textless{} .001{]}. While this analysis is not entirely
+independent from within-event power accumulation analyses described
+earlier, it provides corroborating evidence that event boundaries result
+in a drop in a significant oscillatory power.
 
 Next, we tested the hypothesis that boundary-related decreases in power
 would influence temporal order memory organization. Our logic was the
@@ -723,18 +744,19 @@ order memory). We removed one outlier whose behavioral difference score
 was 2.37 standard deviations from the mean. We found that the
 boundary-related decrease in beta power (but not theta or delta,) was
 correlated with the magnitude of the across-boundary order memory cost
-{[}Figure 5; robust regression: t(16)=2.99, p\textless{}.01{]}. This
-correlation remained significant when including the outlier subject in
-the analysis {[}robust regression: t(17)=2.58, p\textless{}.05{]}. We
-did not observe this pattern in delta or theta (both
-p's\textgreater{}.4). When considering the within-event and across-event
-trials alone, there was trending effect for within-event {[}robust
-regression: t(17)=1.66, p=.06{]} and no effect for across-event
-{[}robust regression: t(17)=.83, p=.11{]}. Thus, the subtraction likely
-acted as a baseline to remove gross across-subject memory differences
-that might have dampened this relationship. This finding suggests that
-the magnitude of drop in beta power at event boundaries is related to
-the impact of event boundaries on temporal order memory.
+{[}Figure 2.5; robust regression: \emph{t}(16) = 2.99, \emph{p}
+\textless{} .01{]}. This correlation remained significant when including
+the outlier subject in the analysis {[}robust regression: \emph{t}(17) =
+2.58, \emph{p} \textless{} .05{]}. We did not observe this pattern in
+delta or theta (both \emph{p}'s \textgreater{} .4). When considering the
+within-event and across-event trials alone, there was trending effect
+for within-event {[}robust regression: \emph{t}(17) = 1.66, \emph{p} =
+.06{]} and no effect for across-event {[}robust regression: \emph{t}(17)
+= .83, \emph{p} = .11{]}. Thus, the subtraction likely acted as a
+baseline to remove gross across-subject memory differences that might
+have dampened this relationship. This finding suggests that the
+magnitude of drop in beta power at event boundaries is related to the
+impact of event boundaries on temporal order memory.
 
 \section{Discussion}\label{discussion}
 
@@ -759,65 +781,72 @@ formation}\label{deltatheta-oscillations-and-temporal-memory-formation}
 
 The pattern of accumulating theta power within an event is consistent
 with prior research demonstrating that increases in theta power are
-correlated with working memory load (Jensen and Tesche). Furthermore, a
-recent EEG study found that (frontal) theta power was greater during the
-maintenance of temporal order information as compared to item
-maintenance alone (Hsieh and Ranganath). In the current study, subjects
-may be accumulating/maintaining within-event item representations as an
-event unfolds. If that is the case, then one might expect theta power to
-increase with each additional maintained item (as working memory load
-increases). This is exactly the pattern of results that we observed.
-Moreover, theta power accumulated specifically when the order of the
-items within the event was successfully encoded (and not when temporal
-order was incorrect), suggesting that dynamic increases in theta power
-across an event may support temporal order encoding. One interpretation
-of this pattern is that accumulating theta power within an event is a
-by-product of neural processes supporting the maintenance of multiple
-items in working memory. Neural representations of items that are
-co-active in working memory might become associatively bound to one
-another, which could support the recovery of temporal information on a
-later test, and explain why accumulating theta power is related to
-temporal order memory success. This interaction between a working memory
-`buffer' and long-term associative memory is predicted by memory models
-that posit that items may become associatively bound in long-term memory
-via a `buffer'-like process active during encoding (Lehman and
-Malmberg).
+correlated with working memory load
+\autocites{jensen_frontal_2002}{raghavachari_gating_2001}{raghavachari_theta_2006}{hsieh_neural_2011}{scheeringa_trial-by-trial_2009}{gevins_high-resolution_1997}.
+Furthermore, a recent EEG study found that (frontal) theta power was
+greater during the maintenance of temporal order information as compared
+to item maintenance alone \autocite{hsieh_neural_2011}. In the current
+study, subjects may be accumulating/maintaining within-event item
+representations as an event unfolds. If that is the case, then one might
+expect theta power to increase with each additional maintained item (as
+working memory load increases). This is exactly the pattern of results
+that we observed. Moreover, theta power accumulated specifically when
+the order of the items within the event was successfully encoded (and
+not when temporal order was incorrect), suggesting that dynamic
+increases in theta power across an event may support temporal order
+encoding. One interpretation of this pattern is that accumulating theta
+power within an event is a by-product of neural processes supporting the
+maintenance of multiple items in working memory. Neural representations
+of items that are co-active in working memory might become associatively
+bound to one another, which could support the recovery of temporal
+information on a later test, and explain why accumulating theta power is
+related to temporal order memory success. This interaction between a
+working memory `buffer' and long-term associative memory is predicted by
+memory models that posit that items may become associatively bound in
+long-term memory via a `buffer'-like process active during encoding
+\autocite{lehman_buffer_2013}.
 
 There is a good deal of evidence now that theta oscillations also play a
-role in long-term memory encoding (REFS), and some recent work has
-argued that theta oscillations may play a more specific role in
-associative binding (REFS). Summerfield and Mangels (2005) found that
-successful word-color associative memory was accompanied by an increase
-in frontal theta power, as well as an increase in frontal-posterior
-theta coherence. In another relevant study, Staudigl and Hanslmayr
-(2013) recorded oscillatory activity while subjects encoded words that
-were superimposed on a background movie. Then, they test memory for the
-words, where some trials were presented intact (same word, same movie)
-while other trials were rearranged (same word, different movie).
-Interestingly, for intact test trials they found that greater theta
-power during encoding was predictive of item memory. However, for
-rearranged test trials, the reverse pattern (i.e.~relatively less theta
-power during encoding) was predictive item memory. This suggests that
-theta power during encoding indexes item-context binding, since
-presumably greater item-context binding would facilitate retrieval in
-the intact condition, but not in the rearranged condition. Taken
-together, these results are consistent with the idea that theta
-oscillations may be an index of neural processes generally supporting
-associative binding, whether its within-trial (i.e.~item-context) or
-across multiple trials (i.e.~item-item).
+role in long-term memory encoding
+\autocites{guderian_medial_2009}{fell_medial_2011}{sederberg_theta_2003}{friese_successful_2013}{summerfield_coherent_2005}{staudigl_theta_2013}{white_theta_2013}{pastotter_distinct_2014}{osipova_theta_2006}{hanslmayr_relationship_2011},
+and some recent work has argued that theta oscillations may play a more
+specific role in associative binding
+\autocites{hsieh_neural_2011}{summerfield_coherent_2005}{staudigl_theta_2013}.
+\textcite{summerfield_coherent_2005} found that successful word-color
+associative memory was accompanied by an increase in frontal theta
+power, as well as an increase in frontal-posterior theta coherence. In
+another relevant study, \textcite{staudigl_theta_2013} recorded
+oscillatory activity while subjects encoded words that were superimposed
+on a background movie. Then, they test memory for the words, where some
+trials were presented intact (same word, same movie) while other trials
+were rearranged (same word, different movie). Interestingly, for intact
+test trials they found that greater theta power during encoding was
+predictive of item memory. However, for rearranged test trials, the
+reverse pattern (i.e.~relatively less theta power during encoding) was
+predictive item memory. This suggests that theta power during encoding
+indexes item-context binding, since presumably greater item-context
+binding would facilitate retrieval in the intact condition, but not in
+the rearranged condition. Taken together, these results are consistent
+with the idea that theta oscillations may be an index of neural
+processes generally supporting associative binding, whether its
+within-trial (i.e.~item-context) or across multiple trials
+(i.e.~item-item).
 
 Our source analyses suggest that delta and theta power accumulation
 appear to be localized to the left hippocampus and right medial temporal
 lobes (MTL), respectively. This is consistent with previous research
 that has shown that theta oscillations in the MTL appear to play a
-critical role in successful memory encoding (CITATIONS). While some
-caution is warranted due to the difficult problem of deep source
-localization (REFS), given the robust literature on MTL contributions to
-memory encoding paired with the localization results here, we
-hypothesize that the within-event delta/theta power accumulation effects
-we observed in this study are indeed generated by MTL structures. Future
-studies could utilize convergent techniques with higher spatial
-resolution (i.e.~intracranial EEG) to validate this localization.
+critical role in successful memory encoding
+\autocites{guderian_medial_2009}{fell_medial_2011}{sederberg_theta_2003}{friese_successful_2013}{summerfield_coherent_2005}{staudigl_theta_2013}{white_theta_2013}{pastotter_distinct_2014}{osipova_theta_2006}{hanslmayr_relationship_2011}.
+While some caution is warranted due to the difficult problem of deep
+source localization
+\autocites{attal_assessment_2013}{mills_techniques_2012}{quraan_detection_2011},
+given the robust literature on MTL contributions to memory encoding
+paired with the localization results here, we hypothesize that the
+within-event delta/theta power accumulation effects we observed in this
+study are indeed generated by MTL structures. Future studies could
+utilize convergent techniques with higher spatial resolution
+(i.e.~intracranial EEG) to validate this localization.
 
 \subsubsection{The Role of Beta Oscillations in the Maintenance of the
 Status
@@ -825,72 +854,74 @@ Quo}\label{the-role-of-beta-oscillations-in-the-maintenance-of-the-status-quo}
 
 In addition to accumulating theta power, we also found a robust
 relationship between accumulating beta power and temporal order memory
-within events (Figure XX). Like theta power, accumulating beta power
+within events (Figure 2.4). Like theta power, accumulating beta power
 within an event was predictive of temporal order memory success.
 Furthermore, subjects who showed larger boundary-related drops in beta
 power also had better within- vs.~across-event temporal order memory,
 suggesting that beta power dynamics have bearing on memory organization.
 
-In a review of the literature, Engel and Fries (2010) propose that beta
-oscillations might index the `maintenance of the status quo'. This
-theory was primarily inspired by research in the motor domain which has
-shown that beta power is elevated during sustained motor operations
+In a review of the literature, \textcite{engel_beta-band_2010} propose
+that beta oscillations might index the `maintenance of the status quo'.
+This theory was primarily inspired by research in the motor domain which
+has shown that beta power is elevated during sustained motor operations
 (i.e.~holding a posture) and decreases during voluntary movements
-(REFS). The authors suggest that if beta oscillations index the
-maintenance of a particular motor state, then they may also be elevated
-during the maintenance of a cognitive set (and in other situations of
-high levels of endogenous attention) and decrease in the face of novel
-or unexpected events. Our results fit well within this framework: we
-found that beta oscillations increased monotonically as the event
-unfolded, and rapidly dropped at event boundaries (i.e.~when the
-background changed to a new novel color). Bolstered by this theoretical
-work, we speculate that the beta oscillations we observed here might
-index the maintenance of a `cognitive set', or perhaps an `event model',
-a construct that is central to event segmentation theory (REFS).
+\autocites{baker_oscillatory_2007}{sanes_oscillations_1993}{baker_coherent_1997}{kilner_task-dependent_1999}{klostermann_task-related_2007}{chakarov_beta-range_2009}.
+The authors suggest that if beta oscillations index the maintenance of a
+particular motor state, then they may also be elevated during the
+maintenance of a cognitive set (and in other situations of high levels
+of endogenous attention) and decrease in the face of novel or unexpected
+events. Our results fit well within this framework: we found that beta
+oscillations increased monotonically as the event unfolded, and rapidly
+dropped at event boundaries (i.e.~when the background changed to a new
+novel color). Bolstered by this theoretical work, we speculate that the
+beta oscillations we observed here might index the maintenance of a
+`cognitive set', or perhaps an `event model', a construct that is
+central to event segmentation theory
+\autocites{zacks_event_2001}{kurby_segmentation_2008}{zacks_human_2001}.
 
 Beta oscillations have also been directly linked with successful memory
 encoding. In a series of intriguing studies, Hanslmayr and colleagues
 found that beta desynchronization in the frontal cortex is predictive of
-subsequent memory and is also positively correlated with BOLD activity.
-Furthermore, the authors found that entrainment of the frontal cortex to
-the beta frequency (but not theta or alpha entrainment) during encoding
-selectively impaired later memory (Hanslmayr). A possible explanation
-for this finding is that beta desynchronization may actually lead to a
-richer, more unique neural representation (REFS). This prediction stems
-from the idea that theoretically, desynchronized brain activity has a
-higher information capacity than synchronized activity (REFs).
-Connecting this idea to the current work, we speculate that accumulating
-beta power (i.e.~increases in synchronized activity) may represent the
-maintenance of a prior cognitive set (or event model). At event
-boundaries, when the background is updated to a novel color, the sharp
-drop in beta power may reflect bottom-up processing of novel perceptual
-information, which may require relatively greater processing bandwidth.
-Thus, while beta power accumulation may be beneficial to forming
-associative relationships among a group of items, at the same time
-greater beta power may be detrimental to encoding in scenarios where
-item distinctiveness is important for memory. Future work should
-directly test this tentative hypothesis.
+subsequent memory and is also positively correlated with BOLD
+activity\autocite{hanslmayr_relationship_2011}. Furthermore, the authors
+found that entrainment of the frontal cortex to the beta frequency (but
+not theta or alpha entrainment) during encoding selectively impaired
+later memory \autocite{hanslmayr_entrainment_2014}. A possible
+explanation for this finding is that beta desynchronization may actually
+lead to a richer, more unique neural representation (REFS). This
+prediction stems from the idea that theoretically, desynchronized brain
+activity has a higher information capacity than synchronized activity
+\autocite{hanslmayr_oscillations_2016}. Connecting this idea to the
+current work, we speculate that accumulating beta power (i.e.~increases
+in synchronized activity) may represent the maintenance of a prior
+cognitive set (or event model). At event boundaries, when the background
+is updated to a novel color, the sharp drop in beta power may reflect
+bottom-up processing of novel perceptual information, which may require
+relatively greater processing bandwidth. Thus, while beta power
+accumulation may be beneficial to forming associative relationships
+among a group of items, at the same time greater beta power may be
+detrimental to encoding in scenarios where item distinctiveness is
+important for memory. Future work should directly test this tentative
+hypothesis.
 
 While low frequency power accumulation was localized to MTL structures,
 beta power accumulation was localized to regions including the frontal
-and parietal cortex (as well as the MTL; see Supplemental Table XX full
-list). Prior studies have found that synchronized beta activity between
-frontal and parietal regions increases under conditions of high top-down
-endogenous attention (Buchsman and Miller; Buchsman and Miller). Thus,
-the observed increase in beta power within an event could reflect an
-increase in exogenous attention necessary to maintain accumulating items
-in working memory. Thus, at boundaries, the drop in beta power could
-reflect a shift from endogenous to exogenous attention.
+and parietal cortex. Prior studies have found that synchronized beta
+activity between frontal and parietal regions increases under conditions
+of high top-down endogenous attention \autocite{buschman_top-down_2007}.
+Thus, the observed increase in beta power within an event could reflect
+an increase in exogenous attention necessary to maintain accumulating
+items in working memory. Thus, at boundaries, the drop in beta power
+could reflect a shift from endogenous to exogenous attention.
 
 Finally, we observed overlap in the source localization of theta and
-beta in the medial temporal lobe (as well as the insula). Both theta
-(CITATIONS) and beta (Kopell, Traub) have been observed in medial
-temporal lobe structures. Empirical data and computational models
-support the idea that while higher frequency bands (such as gamma) can
-be used for relatively local neural computations, it's possible for
-distal brain regions to synchronize at lower frequencies
-(\textless{}gamma). Thus, both of beta and theta in the hippocampus
-could be involved in the integration of representations that are
-distributed across different brain regions in the service of episodic
-memory encoding. Future work should address if and how these frequencies
-might interact.
+beta in the medial temporal lobe (as well as the insula). Both theta and
+beta have been observed in medial temporal lobe structures. Empirical
+data and computational models support the idea that while higher
+frequency bands (such as gamma) can be used for relatively local neural
+computations, it's possible for distal brain regions to synchronize at
+lower frequencies (\textless{}gamma) \autocite{kopel}. Thus, both of
+beta and theta in the hippocampus could be involved in the integration
+of representations that are distributed across different brain regions
+in the service of episodic memory encoding. Future work should address
+if and how these frequencies might interact.

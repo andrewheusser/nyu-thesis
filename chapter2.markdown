@@ -1,4 +1,5 @@
 # Abstract
+GET ABSTRACT FROM CNS
 
 # Introduction
 

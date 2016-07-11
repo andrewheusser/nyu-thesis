@@ -28,7 +28,7 @@ In Experiment 1, we sought to understand how perceptual boundaries influence ass
 \begin{figure}
   \centering
   \includegraphics[width=.75\textwidth]{figures/chapter1_figure1.eps}
-  \caption[Schematic of the Task]{\textit{Schematic of the Task.} Participants made pleasant/unpleasant judgments on object-color pairs.  Critically, the color switched every 6 trials. Object-color associative memory test. (Bottom, left)  After encoding, participants performed a two alternative forced choice object-color memory test. The object-color test was in both Experiment 1 and 2.  Temporal order memory test.  (Bottom, right) After the color test, temporal order memory was tested using a two alternative forced choice task.  Participants indicated which of two studied objects appeared first in the list. The temporal order test was only in Experiment 2.}
+  \caption[Schematic of the task]{\textit{Schematic of the Task.} Participants made pleasant/unpleasant judgments on object-color pairs.  Critically, the color switched every 6 trials. Object-color associative memory test. (Bottom, left)  After encoding, participants performed a two alternative forced choice object-color memory test. The object-color test was in both Experiment 1 and 2.  Temporal order memory test.  (Bottom, right) After the color test, temporal order memory was tested using a two alternative forced choice task.  Participants indicated which of two studied objects appeared first in the list. The temporal order test was only in Experiment 2.}
   \label{chapter1_figure1}
 \end{figure}
 
@@ -55,7 +55,7 @@ Following each encoding list, we tested object-color associative memory.  To min
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter1_figure2.eps}
-  \caption[Behavioral Experiment 1 Results]{\textit{Experiment 1 Results.} Object-color associative memory accuracy (left) and response times are shown as a function of within-event position (right).  The boundary condition is plotted in yellow and non-boundary conditions are plotted in green.  Error bars represent the standard error of the mean. *p<.05, **p<.005, ***p<.001.}
+  \caption[Behavioral experiment 1 results]{\textit{Experiment 1 Results.} Object-color associative memory accuracy (left) and response times are shown as a function of within-event position (right).  The boundary condition is plotted in yellow and non-boundary conditions are plotted in green.  Error bars represent the standard error of the mean. *p<.05, **p<.005, ***p<.001.}
   \label{chapter1_figure2}
 \end{figure}
 
@@ -108,7 +108,7 @@ After each study list, color memory was tested first, with the same design as Ex
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter1_figure3.eps}
-  \caption[Behavioral Experiment 2 Results]{\textit{Experiment 2 Results.} (A) Memory accuracy is shown as a function of test and condition. (B) Temporal order memory accuracy split into terciles by encoding response time of intervening boundary (for across-event) or non-boundary (for within-event) trial.  (C) Task response times during encoding as a function of event position. (D) Retrieval response times for correct trials as a function of condition and memory test. All error bars represent standard error of the mean across subjects.  *p<.05, **p<.005, ***p<.001. }
+  \caption[Behavioral experiment 2 results]{\textit{Experiment 2 Results.} (A) Memory accuracy is shown as a function of test and condition. (B) Temporal order memory accuracy split into terciles by encoding response time of intervening boundary (for across-event) or non-boundary (for within-event) trial.  (C) Task response times during encoding as a function of event position. (D) Retrieval response times for correct trials as a function of condition and memory test. All error bars represent standard error of the mean across subjects.  *p<.05, **p<.005, ***p<.001. }
   \label{chapter1_figure3}
 \end{figure}
 
@@ -183,7 +183,7 @@ After each free recall period, participants were given an object-color memory ta
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter1_figure4.eps}
-  \caption[Behavioral Experiment 3 Results]{\textit{Experiment 3 Results.} (A) Task schematic. (B) Local forward (sum of n+1, n+2, n+3) transition likelihood as a function of within-event position. (C) Local backward (sum of n-1, n-2, n-3) transition likelihood as a function of within-event position. (D) Average transition distance as a function of within-event position.  (E) Likelihood of transition from pre-boundary items as a function of within-event position.  *p<.05, **p<.005.}
+  \caption[Behavioral experiment 3 results]{\textit{Experiment 3 Results.} (A) Task schematic. (B) Local forward (sum of n+1, n+2, n+3) transition likelihood as a function of within-event position. (C) Local backward (sum of n-1, n-2, n-3) transition likelihood as a function of within-event position. (D) Average transition distance as a function of within-event position.  (E) Likelihood of transition from pre-boundary items as a function of within-event position.  *p<.05, **p<.005.}
   \label{chapter1_figure4}
 \end{figure}
 
@@ -254,13 +254,13 @@ Together, Experiments 1 and 2 suggest that while perceptual boundaries may enhan
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter1_suppfigure1.eps}
-  \caption[Behavioral Experiment 3: Proportion of trials recalled by serial position]{\textit{Proportion of trials recalled as a function of serial position.} The proportion of freely recalled items is plotted as a function of the serial position in which the object was studied.  Boundary trials are in yellow and non-boundary trials are in green.  Error bars represent the standard error of the mean across subjects.}
+  \caption[Behavioral experiment 3: Proportion of trials recalled by serial position]{\textit{Proportion of trials recalled as a function of serial position.} The proportion of freely recalled items is plotted as a function of the serial position in which the object was studied.  Boundary trials are in yellow and non-boundary trials are in green.  Error bars represent the standard error of the mean across subjects.}
   \label{chapter1_suppfigure1}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{figures/chapter1_suppfigure2.eps}
-  \caption[Behavioral Experiment 3: Lag conditional response probability.]{\textit{Lag conditional response probability.} Given the recall of a particular item, this figure shows the probability of the next recalled item as a function of its lag from the currently recalled item. On the y-axis is the conditional response probability and on the x-axis is the serial recall lag. For example, serial recall lag of 1 represents the likelihood of transitioning from n to n+1.}
+  \caption[Behavioral experiment 3: Lag conditional response probability.]{\textit{Lag conditional response probability.} Given the recall of a particular item, this figure shows the probability of the next recalled item as a function of its lag from the currently recalled item. On the y-axis is the conditional response probability and on the x-axis is the serial recall lag. For example, serial recall lag of 1 represents the likelihood of transitioning from n to n+1.}
   \label{chapter1_suppfigure2}
 \end{figure}
