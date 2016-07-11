@@ -264,3 +264,23 @@ Together, Experiments 1 and 2 suggest that while perceptual boundaries may enhan
   \caption[Behavioral experiment 3: Lag conditional response probability.]{\textit{Lag conditional response probability.} Given the recall of a particular item, this figure shows the probability of the next recalled item as a function of its lag from the currently recalled item. On the y-axis is the conditional response probability and on the x-axis is the serial recall lag. For example, serial recall lag of 1 represents the likelihood of transitioning from n to n+1.}
   \label{chapter1_suppfigure2}
 \end{figure}
+
+# Supplemental Tables
+
+\begin{table}[ht]
+\caption{Nonlinear Model Results} % title of Table
+\centering % used for centering table
+\begin{tabular}{c c c c} % centered columns (4 columns)
+\hline\hline %inserts double horizontal lines
+Case & Method\#1 & Method\#2 & Method\#3 \\ [0.5ex] % inserts table
+%heading
+\hline % inserts single horizontal line
+1 & 50 & 837 & 970 \\ % inserting body of the table
+2 & 47 & 877 & 230 \\
+3 & 31 & 25 & 415 \\
+4 & 35 & 144 & 2356 \\
+5 & 45 & 300 & 556 \\ [1ex] % [1ex] adds vertical space
+\hline %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
