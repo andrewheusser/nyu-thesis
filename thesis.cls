@@ -118,8 +118,7 @@
 
 
 \RequirePackage{titlesec}     		             % For fancy chapter heading
-								    % 		if you remove this, remove the section
-								    %		below which formats the chapter
+\RequirePackage{rotating}
 
 
 
